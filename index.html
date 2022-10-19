@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js3w1-style.css">
+    <title>js3w1-hw-suman ghimire</title>
+</head>
+<body>
+
+
+<h1>Weather Report</h1>
+
+<button id="getCurrentlocationWeather"> Current Location Weather </button> <input type="text" name="weatherSearchByCity" id="weatherSearchByCity" placeholder="search weather by city">
+<button id="weatherButton"> ok </button>
+<section id="weatherDiv" >
+
+<figure>
+  <figcaption> <p id="cityName"> </p> </figcaption>
+  <a id="weatherCityMap"></a>
+   <a id ="linktoMap" target="display-frame"> <img id="img1" title="view on map" alt=""></a>
+   <ul id="weatherMoreUl"></ul>
+</figure>
+
+<ul id="weatherUl"></ul>
+
+<section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18027.23563828253!2d12.37115645!3d55.6123778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sda!2sdk!4v1639699608865!5m2!1sda!2sdk" id="iframe1" name="mapDisplay" width="400" height="300" style="border:0;"  loading="lazy"></iframe>
+    <!-- <iframe  id="iframe1" name="display-frame"  style="border:0 solid #4e46e5;"  ></iframe> -->
+
+</section>
+</section>
+
+
+<hr>
+<h1> Giphy Searcher </h1>
+<input type="text" name="" id="giphySearchInput" placeholder="Search for Gify">
+<input type="number" name="" id="giphySearchNumberInput" placeholder="give number of image to display">
+<button id="giphyButton"> ok</button>
+<hr>
+<section id="gifImgDisplay">
+    
+</section>
+<hr>
+
+<script src="js3w1-weatherApi.js"></script>
+<script src="js3w1-giphyApi.js"></script>
+</body>
+</html>
