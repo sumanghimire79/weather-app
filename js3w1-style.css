@@ -1,77 +1,114 @@
+Skip to content
+amritpandey
+/
+hyf-homework
+Public
+generated from HackYourFuture-CPH/hyf-homework-template
+Code
+Issues
+Pull requests
+1
+Actions
+More
+hyf-homework/javascript/javascript3/week1/weatherApp/style1.css
+@amritpandey
+amritpandey Fixed the wrong selector from id to class in weatherApp style1.css
+ History
+ 1 contributor
+81 lines (78 sloc)  1.43 KB
 body {
-  background-color: rgb(43, 235, 43);
-  width: 80%;
-  margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #222;
+    background-image: url(https://source.unsplash.com/1600x900/?landscape);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Prompt', sans-serif;
+    flex-direction: column;
 }
-#classWork1 {
-  width: 10rem;
+.card {
+    padding: 2em;
+    margin: 1em;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #000000d0;
+    color: white;
 }
-#randomDogImage {
-  height: 10rem;
-  width: 10rem;
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#img1 {
-  display: block;
-  width: 10rem;
-
- margin: 0;
- padding: 0;
+h1.temp {
+    margin: 0;
 }
-#img1:hover {
-  -ms-transform: rotate(20deg); /* IE 9 */
-  transform: rotate(350deg);
- 
-}
-
-#weatherDiv {
-  align-items: center;
-  display: flex;
-
-  background-color: rgb(35, 170, 125);
-  gap: 1rem;
-  justify-content: center;
-  background-image: url(/images/Sky.gif);
-background-repeat: no-repeat;
-background-position: center;
-background-size: 95%;
-
-  flex-wrap: wrap;
-}
-
-#cityName {
-  background-color: red;
-  font-weight: bolder;
-  font-style: italic;
-  font-size: x-large;
+input.search-bar {
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    padding: 0.6em 1em;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+    width: calc(100%-150px);
 }
 
-#weatherUl > li:first-child {
-  font-weight: bolder;
-  font-style: italic;
-}
-#weatherUl {
-  list-style-type: none;
-}
-#weatherMoreUl{
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  
-  
-}
-figcaption,
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.btnSearch:hover {
+    background: #7c7c7c2b;
 }
 
-#gifImgDisplay {
-  display: flex;
-  list-style-type: none;
-  gap: 1rem;
-  flex-wrap: wrap;
-
-  align-items: center;
+.btnSearch {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
+
+.weather {
+    text-align: center;
+}
+.weather > div {
+    margin-top: 0.6em;
+}
+.currentPosition {
+    background: #7c7c7c2b;
+    color: blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+}
+.description {
+    font-style: italic;
+    font-family: fantasy;
+    font-size: 150%;
+    color: sienna;
+}
+#error-display {
+    color: red;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+hyf-homework/style1.css at master · amritpandey/hyf-homework
